@@ -1,0 +1,192 @@
+fileFormatVersion: 2
+guid: de125eb3899b620489fd44d3fde4f232
+ModelImporter:
+  serializedVersion: 19300
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: Air Hockey Lines
+  - first:
+      1: 100002
+    second: //RootNode
+  - first:
+      1: 100004
+    second: Air Hockey Table
+  - first:
+      1: 100006
+    second: Score Bar
+  - first:
+      4: 400000
+    second: Air Hockey Lines
+  - first:
+      4: 400002
+    second: //RootNode
+  - first:
+      4: 400004
+    second: Air Hockey Table
+  - first:
+      4: 400006
+    second: Score Bar
+  - first:
+      23: 2300000
+    second: Air Hockey Lines
+  - first:
+      23: 2300002
+    second: Air Hockey Table
+  - first:
+      23: 2300004
+    second: Score Bar
+  - first:
+      33: 3300000
+    second: Air Hockey Lines
+  - first:
+      33: 3300002
+    second: Air Hockey Table
+  - first:
+      33: 3300004
+    second: Score Bar
+  - first:
+      43: 4300000
+    second: Score Bar
+  - first:
+      43: 4300002
+    second: Air Hockey Lines
+  - first:
+      43: 4300004
+    second: Air Hockey Table
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Air Hockey Red
+    second: {fileID: 2100000, guid: d64f26118ffe6af4bb21a3d69c347ad3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Air Hockey Table 1
+    second: {fileID: 2100000, guid: efcb321920f8d7c47bcfe826aeb34cee, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Air Hockey Table 2
+    second: {fileID: 2100000, guid: 4054a1e8cc58e584184ec8fad42c575d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Air Hockey Table 3
+    second: {fileID: 2100000, guid: e3294c18ec438cc42a8e5038eb0b7cab, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Air Hockey Table 4
+    second: {fileID: 2100000, guid: 805307eeafa68f4469fe022a1db08d7b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Air hockey Blue
+    second: {fileID: 2100000, guid: f978a47782ece7d44b7b4cdf9b150533, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Score Bar 1
+    second: {fileID: 2100000, guid: a74cffdde04b0694392a0a1eb1c19f07, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Score Bar 2
+    second: {fileID: 2100000, guid: ddb560ecfb0653a4c8af35ff3f9163c6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Score Bar 3
+    second: {fileID: 2100000, guid: 28888a7a6a86f984ab1544682893c304, type: 2}
+  materials:
+    materialImportMode: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 1
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 0
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 0
+  humanoidOversampling: 1
+  avatarSetup: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

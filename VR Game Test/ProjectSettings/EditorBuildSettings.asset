@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/BNG Framework/Scenes/Carnival Scene.unity
-    guid: c0900b4a1bfde9547aad7e2e5f2b45b8
+    path: Assets/9t5 Low Poly Bowling Alley/Scenes/Demo Scene.unity
+    guid: f0e7262bf2cb4c8469b2730e666dd549
   m_configObjects: {}
