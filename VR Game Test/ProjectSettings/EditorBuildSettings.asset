@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/9t5 Low Poly Bowling Alley/Scenes/Demo Scene.unity
-    guid: f0e7262bf2cb4c8469b2730e666dd549
+    path: Assets/BNG Framework/Scenes/MyGame.unity
+    guid: f3a2172a35dbf54479f5a24e7b16d1ec
   m_configObjects: {}

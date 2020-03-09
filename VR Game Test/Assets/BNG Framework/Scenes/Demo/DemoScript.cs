@@ -130,7 +130,7 @@ namespace BNG {
             teleport.enabled = player.SelectedLocomotion == LocomotionType.Teleport;
 
             // Cycle through hand models with Right Thumbstick
-            if (input.RightThumbstickDown || Input.GetKeyDown(KeyCode.N)) {
+            if (/*input.RightThumbstickDown ||*/ Input.GetKeyDown(KeyCode.N)) {
                 ChangeHandsModel(_selectedHandGFX + 1, LoadLocomotionFromPrefs);
             }
 

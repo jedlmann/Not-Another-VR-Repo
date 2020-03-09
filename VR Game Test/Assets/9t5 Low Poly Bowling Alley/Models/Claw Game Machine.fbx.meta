@@ -1,80 +1,247 @@
 fileFormatVersion: 2
 guid: 72afb3766e233c641ba649a31d547c09
-timeCreated: 1540603018
-licenseType: Store
 ModelImporter:
-  serializedVersion: 19
-  fileIDToRecycleName:
-    100000: Bone
-    100002: Bone.001
-    100004: Bone.001_end
-    100006: Bone.002
-    100008: Bone.003
-    100010: Bone.004
-    100012: Buttons
-    100014: Cable
-    100016: Claw
-    100018: Claw Component
-    100020: //RootNode
-    100022: Claw Machine
-    100024: Cube.002
-    100026: Cube.003
-    100028: Cube.004
-    100030: Cube.005
-    100032: Glass
-    100034: Joystick
-    400000: Bone
-    400002: Bone.001
-    400004: Bone.001_end
-    400006: Bone.002
-    400008: Bone.003
-    400010: Bone.004
-    400012: Buttons
-    400014: Cable
-    400016: Claw
-    400018: Claw Component
-    400020: //RootNode
-    400022: Claw Machine
-    400024: Cube.002
-    400026: Cube.003
-    400028: Cube.004
-    400030: Cube.005
-    400032: Glass
-    400034: Joystick
-    2300000: Buttons
-    2300002: Claw Component
-    2300004: Claw Machine
-    2300006: Cube.002
-    2300008: Cube.003
-    2300010: Cube.004
-    2300012: Cube.005
-    2300014: Glass
-    2300016: Joystick
-    3300000: Buttons
-    3300002: Claw Component
-    3300004: Claw Machine
-    3300006: Cube.002
-    3300008: Cube.003
-    3300010: Cube.004
-    3300012: Cube.005
-    3300014: Glass
-    3300016: Joystick
-    4300000: Joystick
-    4300002: Buttons
-    4300004: Claw Component
-    4300006: Cube.002
-    4300008: Cube.003
-    4300010: Cube.004
-    4300012: Cube.005
-    4300014: Cable
-    4300016: Glass
-    4300018: Claw Machine
-    9500000: //RootNode
-    13700000: Cable
+  serializedVersion: 19300
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: Bone
+  - first:
+      1: 100002
+    second: Bone.001
+  - first:
+      1: 100004
+    second: Bone.001_end
+  - first:
+      1: 100006
+    second: Bone.002
+  - first:
+      1: 100008
+    second: Bone.003
+  - first:
+      1: 100010
+    second: Bone.004
+  - first:
+      1: 100012
+    second: Buttons
+  - first:
+      1: 100014
+    second: Cable
+  - first:
+      1: 100016
+    second: Claw
+  - first:
+      1: 100018
+    second: Claw Component
+  - first:
+      1: 100020
+    second: //RootNode
+  - first:
+      1: 100022
+    second: Claw Machine
+  - first:
+      1: 100024
+    second: Cube.002
+  - first:
+      1: 100026
+    second: Cube.003
+  - first:
+      1: 100028
+    second: Cube.004
+  - first:
+      1: 100030
+    second: Cube.005
+  - first:
+      1: 100032
+    second: Glass
+  - first:
+      1: 100034
+    second: Joystick
+  - first:
+      4: 400000
+    second: Bone
+  - first:
+      4: 400002
+    second: Bone.001
+  - first:
+      4: 400004
+    second: Bone.001_end
+  - first:
+      4: 400006
+    second: Bone.002
+  - first:
+      4: 400008
+    second: Bone.003
+  - first:
+      4: 400010
+    second: Bone.004
+  - first:
+      4: 400012
+    second: Buttons
+  - first:
+      4: 400014
+    second: Cable
+  - first:
+      4: 400016
+    second: Claw
+  - first:
+      4: 400018
+    second: Claw Component
+  - first:
+      4: 400020
+    second: //RootNode
+  - first:
+      4: 400022
+    second: Claw Machine
+  - first:
+      4: 400024
+    second: Cube.002
+  - first:
+      4: 400026
+    second: Cube.003
+  - first:
+      4: 400028
+    second: Cube.004
+  - first:
+      4: 400030
+    second: Cube.005
+  - first:
+      4: 400032
+    second: Glass
+  - first:
+      4: 400034
+    second: Joystick
+  - first:
+      23: 2300000
+    second: Buttons
+  - first:
+      23: 2300002
+    second: Claw Component
+  - first:
+      23: 2300004
+    second: Claw Machine
+  - first:
+      23: 2300006
+    second: Cube.002
+  - first:
+      23: 2300008
+    second: Cube.003
+  - first:
+      23: 2300010
+    second: Cube.004
+  - first:
+      23: 2300012
+    second: Cube.005
+  - first:
+      23: 2300014
+    second: Glass
+  - first:
+      23: 2300016
+    second: Joystick
+  - first:
+      33: 3300000
+    second: Buttons
+  - first:
+      33: 3300002
+    second: Claw Component
+  - first:
+      33: 3300004
+    second: Claw Machine
+  - first:
+      33: 3300006
+    second: Cube.002
+  - first:
+      33: 3300008
+    second: Cube.003
+  - first:
+      33: 3300010
+    second: Cube.004
+  - first:
+      33: 3300012
+    second: Cube.005
+  - first:
+      33: 3300014
+    second: Glass
+  - first:
+      33: 3300016
+    second: Joystick
+  - first:
+      43: 4300000
+    second: Joystick
+  - first:
+      43: 4300002
+    second: Buttons
+  - first:
+      43: 4300004
+    second: Claw Component
+  - first:
+      43: 4300006
+    second: Cube.002
+  - first:
+      43: 4300008
+    second: Cube.003
+  - first:
+      43: 4300010
+    second: Cube.004
+  - first:
+      43: 4300012
+    second: Cube.005
+  - first:
+      43: 4300014
+    second: Cable
+  - first:
+      43: 4300016
+    second: Glass
+  - first:
+      43: 4300018
+    second: Claw Machine
+  - first:
+      95: 9500000
+    second: //RootNode
+  - first:
+      137: 13700000
+    second: Cable
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Claw Machine 1
+    second: {fileID: 2100000, guid: 13982313ad00f6b4c96208573ae84ed3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Claw Machine 2
+    second: {fileID: 2100000, guid: 2e89117da84f7d345bad34facd4ea46a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Claw Machine 3
+    second: {fileID: 2100000, guid: 48d445a57c75572489ea9e03e16df47c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Claw Machine 4
+    second: {fileID: 2100000, guid: 13e13a2779af7ef40b8903a1cf741176, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Claw Machine 5
+    second: {fileID: 2100000, guid: 976577d7d80913d42831db223579a3e7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Glass
+    second: {fileID: 2100000, guid: af9f345ee4482274fa3c5468d193e291, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: No Name
+    second: {fileID: 2100000, guid: cddf67e56cfc218469d3f1f61bf08aa5, type: 2}
   materials:
-    importMaterials: 1
+    materialImportMode: 1
     materialName: 0
     materialSearch: 1
+    materialLocation: 0
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
@@ -87,26 +254,39 @@ ModelImporter:
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
     animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
+    extraUserProperties: []
     clipAnimations: []
     isReadable: 1
   meshes:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 0
     importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
-    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 1
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
@@ -116,10 +296,14 @@ ModelImporter:
     normalSmoothAngle: 60
     normalImportMode: 0
     tangentImportMode: 3
+    normalCalculationMode: 0
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
   importAnimation: 1
-  copyAvatar: 0
   humanDescription:
-    serializedVersion: 2
+    serializedVersion: 3
     human: []
     skeleton: []
     armTwist: 0.5
@@ -129,14 +313,16 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
+    globalScale: 1
     rootMotionBoneName: 
-    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 2
   humanoidOversampling: 1
+  avatarSetup: 1
   additionalBone: 0
   userData: 
   assetBundleName: 
