@@ -5,7 +5,7 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/WhackMole.unity
     guid: 77564e853989f2044a0dc78470031b02
   - enabled: 0
@@ -14,4 +14,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Archery.unity
     guid: b0b1132f6797b7541af76d3870b93789
+  - enabled: 0
+    path: Assets/Scenes/SkiBall.unity
+    guid: a5cb4a76baff1ee40b4321f1ce556247
+  - enabled: 1
+    path: Assets/Scenes/ski.unity
+    guid: 9f4cf637a79341347933de32152ffefd
   m_configObjects: {}
