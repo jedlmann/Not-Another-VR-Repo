@@ -4,26 +4,18 @@ using UnityEngine;
 
 public class SkiballScript: MonoBehaviour
 {
-    //values for Y when moles are hidden/shown
-    public float visibleYHeight = 31.0f;
-    public float hiddenYHeight = 28.0f;
+    //values for ball return spawn
+    public float BallReturnX = -0.01f;
+    public float BallReturnY = 0.65f;
+    public float BallReturnZ = 4.1f;
+    
 
-    //position to move current Mole
-    private Vector3 myNewXYZPosition;
-   
-    //speed of mole movement
-    public float speed = 7f;
-
-    //hide mole timer
-    public float hideMoletimer = 0.9f;
 
     //Mole is Created
     private void Awake()
     {
-        hideMole();
-
-        //set current position
-        transform.localPosition = myNewXYZPosition;
+       
+        
     }
 
     
@@ -31,60 +23,93 @@ public class SkiballScript: MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        GameObject GameController = GameObject.Find("GameController");
-        GameController GameControllerScript = GameController.GetComponent<GameController>();
+        //GameObject SkiGameController = GameObject.Find("SkiGameController");
+        //SkiGameController SkiGameControllerScript = SkiGameController.GetComponent<SkiGameController>();
 
-        if (GameControllerScript.gameTimer > 0)
+        //if (SkiGameControllerScript.gameTimer > 0)
 
-        { 
-            //move mole to new X, Y, Z position 
-            transform.localPosition = Vector3.Lerp(transform.localPosition, myNewXYZPosition, Time.deltaTime * speed);
+        //{ 
+        //    //move mole to new X, Y, Z position 
+        //    transform.localPosition = Vector3.Lerp(transform.localPosition, myNewXYZPosition, Time.deltaTime * speed);
 
-            //hide mole if hidemole timer is less than 0
-
-            hideMoletimer -= Time.deltaTime;
-
-            if (hideMoletimer < 0)
-            {
-                hideMole();
-            }
-        }
+           
+        //}
 
     }
 
-    
+
 
     //collision between ball and hole
     void OnCollisionEnter(Collision collision)
     {
-        if (collision.collider.name == "Hammer")
+        GameObject TheSkiGameController = GameObject.Find("TheSkiGameController");
+        TheSkiGameController TheSkiGameControllerScript = TheSkiGameController.GetComponent<TheSkiGameController>();
+
+        if (TheSkiGameControllerScript.gameTimer > 0)
         {
-            //push mole down
-            hideMole();
+            if (collision.collider.name == "100")
+            {
+                //increase score
+                TheSkiGameControllerScript.score += 100;
+                returnBall();
+            }
 
-            GameObject GameController = GameObject.Find("GameController");
-            GameController GameControllerScript = GameController.GetComponent<GameController>();
+            if (collision.collider.name == "50")
+            {
+                //increase score
+                TheSkiGameControllerScript.score += 50;
+                returnBall();
+            }
 
-            //increase score
-            GameControllerScript.score += 1;
+            if (collision.collider.name == "30")
+            {
+                //increase score
+                TheSkiGameControllerScript.score += 30;
+                returnBall();
+            }
+
+            if (collision.collider.name == "20")
+            {
+                //increase score
+                TheSkiGameControllerScript.score += 20;
+                returnBall();
+
+            }
+
+            if (collision.collider.name == "10")
+            {
+                //increase score
+                TheSkiGameControllerScript.score += 10;
+                returnBall();
+
+            }
+
+            if (collision.collider.name == "0")
+            {
+
+                returnBall();
+
+            }
 
             //update text in unity
-            GameControllerScript.scoreText.text = "Score: " + Mathf.Floor(GameControllerScript.score);
-            
+            TheSkiGameControllerScript.scoreText.text = "Score: " + Mathf.Floor(TheSkiGameControllerScript.score);
+        }
+
+        if (TheSkiGameControllerScript.gameTimer <= 0)
+        {
+            if (collision.collider.tag == "hole")
+            {
+                returnBall();
+            }
+
+           
         }
     }
-
-        //hide the mole
-        public void hideMole()
+        //return the ball
+        public void returnBall()
     {
-        //set mole's position to hidden
-        myNewXYZPosition = new Vector3(transform.localPosition.x, hiddenYHeight, transform.localPosition.z);
+        //set ball's position to come out return pipe
+        transform.localPosition = new Vector3(BallReturnX, BallReturnY, BallReturnZ);
     }
 
-    public void showMole()
-    {
-        //set current position to visible Y height
-        myNewXYZPosition = new Vector3(transform.localPosition.x, visibleYHeight, transform.localPosition.z);
-        hideMoletimer = Random.Range(0.8f, 1.4f);
-    }
 }
