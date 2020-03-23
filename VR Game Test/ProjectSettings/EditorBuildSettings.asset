@@ -8,7 +8,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/WhackMole.unity
     guid: 77564e853989f2044a0dc78470031b02
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Bowling.unity
     guid: 14733c4ce73e99a42a0a076912700007
   - enabled: 0
@@ -20,7 +20,7 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/savemywork.unity
     guid: ca8d2eff0f5d2724398a067e00e69eb9
   m_configObjects: {}
