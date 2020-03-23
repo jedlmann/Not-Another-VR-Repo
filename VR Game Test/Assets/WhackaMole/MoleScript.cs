@@ -81,7 +81,11 @@ public class MoleScript : MonoBehaviour
 
             //update text in unity
             GameControllerScript.scoreText.text = "Score: " + Mathf.Floor(GameControllerScript.score);
+
+            //play hit audio
             
+            GameControllerScript.whack.Play(0);
+
         }
     }
 

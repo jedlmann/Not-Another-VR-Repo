@@ -10,11 +10,16 @@ public class GameController : MonoBehaviour
     public int score;
     public float gameTimer;
     bool TimerTrue;
+    AudioSource clockTick;
+    AudioSource gameOver;
+    public AudioSource whack;
+    bool overSoundPlayed;
 
     // MOLE VARIABLES
     
     public GameObject moleContainer;
-   
+    public GameObject machine;
+
     //array for moles inside container
     private MoleScript[] moles;
 
@@ -30,7 +35,9 @@ public class GameController : MonoBehaviour
         //score = 0;
         gameTimer = 0f;
         timerText.text = "Press Start To Play";
-
+        whack = moleContainer.GetComponent<AudioSource>();
+        gameOver = machine.GetComponent<AudioSource>();
+        clockTick = GetComponent<AudioSource>();
 
     }
 
@@ -40,10 +47,20 @@ public class GameController : MonoBehaviour
         {
             //put all moles from molecontainer into mole array
             moles = moleContainer.GetComponentsInChildren<MoleScript>();
+            
             //set variables to (re)start game
             score = 0;
             gameTimer = 45f;
+
+            //start clock sound
+           
+            clockTick.Play(0);
+
+            //set timer is going boolean to true
             TimerTrue = true;
+
+            overSoundPlayed = false;
+            
         }
     }
     
@@ -54,6 +71,7 @@ public class GameController : MonoBehaviour
         {
             //subtracts 1 second from game timer
             gameTimer -= Time.deltaTime;
+          
         }
         
 
@@ -78,10 +96,22 @@ public class GameController : MonoBehaviour
         // game timer less than 0 seconds
         else if (gameTimer < 0)
         {
+            //change to game over text
             timerText.text = "GAME OVER";
+            
+            //timer boolean set to false
             TimerTrue = false;
 
+            //pause clock ticking noise
+            clockTick.Stop();
+            
+            if (overSoundPlayed == false)
+            {
+                gameOver.Play(0);
+                overSoundPlayed = true;
+            }
         }
         
+      
     }
 }
