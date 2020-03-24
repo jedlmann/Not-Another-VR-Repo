@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class BowlingScore : MonoBehaviour
 {
     public int score = 0;
-    public Text text; 
+    public TextMesh text; 
 
     public void Add(int amount)
     {
