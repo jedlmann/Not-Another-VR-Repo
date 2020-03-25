@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class BowlingPins : MonoBehaviour
 {
-    public Transform pin;
-    public float threshold = .6f;
-    public int point = 1;
-    public BowlingScore score;
+    public Transform pin; //pin position
+    public float threshold = .6f; //topple threshold
+    public int point = 1; // point
+    public BowlingScore score; // score
 
 
     private void Awake()
