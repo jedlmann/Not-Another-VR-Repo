@@ -5043,7 +5043,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 322532e8c5f9fd141acc62d688b10bce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  amplitude: 2
+  amplitude: 1
   timePeriod: 2
   chanceOfMovement: 0.5
 --- !u!1 &8100653689970036323
