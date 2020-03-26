@@ -4,19 +4,20 @@ using UnityEngine;
 
 public class GameController : MonoBehaviour
 {
-   
+   //timer & score
     public TextMesh timerText;
     public TextMesh scoreText;
     public int score;
     public float gameTimer;
     bool TimerTrue;
+
+    //audio
     AudioSource clockTick;
     AudioSource gameOver;
     public AudioSource whack;
     bool overSoundPlayed;
 
     // MOLE VARIABLES
-    
     public GameObject moleContainer;
     public GameObject machine;
 
@@ -28,13 +29,11 @@ public class GameController : MonoBehaviour
 
     void Start()
     {
-        ////put all moles from molecontainer into mole array
-        //moles = moleContainer.GetComponentsInChildren<MoleScript>();
-
-        ////set variables
-        //score = 0;
+        //timer set to 0
         gameTimer = 0f;
         timerText.text = "Press Start To Play";
+
+        //prepare audio sources
         whack = moleContainer.GetComponent<AudioSource>();
         gameOver = machine.GetComponent<AudioSource>();
         clockTick = GetComponent<AudioSource>();
@@ -59,6 +58,7 @@ public class GameController : MonoBehaviour
             //set timer is going boolean to true
             TimerTrue = true;
 
+            //set gameOver sound bool back to unplayed
             overSoundPlayed = false;
             
         }
@@ -105,6 +105,7 @@ public class GameController : MonoBehaviour
             //pause clock ticking noise
             clockTick.Stop();
             
+            //if the gameover sound has not already been played, play it now, and set bool to show it has played. 
             if (overSoundPlayed == false)
             {
                 gameOver.Play(0);
