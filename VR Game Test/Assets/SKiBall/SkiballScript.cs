@@ -18,7 +18,7 @@ public class SkiballScript: MonoBehaviour
     
     
 
-    //Mole is Created
+    
     private void Awake()
     {
        //set ball return coordinates
@@ -119,19 +119,15 @@ public class SkiballScript: MonoBehaviour
                 {
                     point.Play();
                 }
-
-            returnBall();
-            }
-
-            if (collision.collider.name == "0")
-            {
+    
                 returnBall();
             }
 
-            if (collision.collider.name == "Floor")
+            if (collision.collider.name == "0" || collision.collider.name == "Floor")
             {
                 returnBall();
             }
+           
                 
     }
         //return the ball, play sound effects and update points

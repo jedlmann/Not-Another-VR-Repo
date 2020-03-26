@@ -95,7 +95,8 @@ namespace BNG {
             ShaftCollider.enabled = true;
         }
 
-        private void OnCollisionEnter(Collision collision) {
+         void OnCollisionEnter(Collision collision) {
+
 
             // Ignore parent collisions
             if (transform.parent != null && collision.transform == transform.parent) {
