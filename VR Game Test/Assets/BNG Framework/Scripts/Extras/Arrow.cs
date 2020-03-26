@@ -97,20 +97,6 @@ namespace BNG {
 
          void OnCollisionEnter(Collision collision) {
 
-        /*  GameObject TheArcheryGameController = GameObject.Find("TheArhceryGameController");
-          ArcheryController TheArcheryGameControllerScript = TheArcheryGameController.GetComponent<ArcheryController>();
-
-            if(TheArcheryGameControllerScript.gameTimer > 0)
-            {
-                if (collision.gameObject.tag == "breakable")
-                {
-                    //increase score
-                    TheArcheryGameControllerScript.score += 1;
-               
-                }
-                TheArcheryGameControllerScript.scoreText.text = "Score: " + Mathf.Floor(TheArcheryGameControllerScript.score);
-            }*/
-            
 
             // Ignore parent collisions
             if (transform.parent != null && collision.transform == transform.parent) {
