@@ -57,23 +57,6 @@ namespace BNG {
                 DestroyThis();
             }
         }
-       
-        private void OnCollisionEnter(Collision collision)
-        {
-            if (collision.gameObject.tag == "arrow")
-            {
-                GameObject TheArcheryGameController = GameObject.Find("TheArcheryGameController");
-                ArcheryController TheArcheryGameControllerScript = TheArcheryGameController.GetComponent<ArcheryController>();
-
-                //increase score
-                TheArcheryGameControllerScript.score += 1;
-
-                //update text in unity
-                TheArcheryGameControllerScript.scoreText.text = "Score: " + Mathf.Floor(TheArcheryGameControllerScript.score);
-                
-            }
-
-        } 
 
         public void DestroyThis() {
             Health = 0;
@@ -95,8 +78,8 @@ namespace BNG {
             if (DestroyOnDeath) {
                 Destroy(this.gameObject, DestroyDelay);
             }
-          else if (Respawn) {
-                StartCoroutine(RespawnRoutine(RespawnTime)); 
+            else if (Respawn) {
+                StartCoroutine(RespawnRoutine(RespawnTime));
             }
 
             if (RemoveBulletHolesOnDeath) {
@@ -109,7 +92,7 @@ namespace BNG {
                 if (decal) {
                     GameObject.Destroy(decal.gameObject);
                 }
-            } 
+            }
         }
 
         IEnumerator RespawnRoutine(float seconds) {
@@ -131,7 +114,7 @@ namespace BNG {
             foreach (var col in DeactivateCollidersOnDeath) {
                 col.enabled = true;
             }
-        } 
+        }
     }
 }
 
