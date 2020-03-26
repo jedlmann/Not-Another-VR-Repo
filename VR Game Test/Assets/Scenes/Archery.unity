@@ -1278,7 +1278,7 @@ GameObject:
   - component: {fileID: 1243610475}
   - component: {fileID: 1243610476}
   m_Layer: 0
-  m_Name: ArcheryGameController
+  m_Name: TheArcheryGameController
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

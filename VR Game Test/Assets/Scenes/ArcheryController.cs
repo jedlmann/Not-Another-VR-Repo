@@ -12,7 +12,7 @@ public class ArcheryController : MonoBehaviour
    
     void Start()
     {
-        gameTimer = 1f;
+        gameTimer = 0f;
         timerText.text = "Press Start To Play";
     }
 
