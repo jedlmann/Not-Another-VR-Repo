@@ -95,7 +95,21 @@ namespace BNG {
             ShaftCollider.enabled = true;
         }
 
-        private void OnCollisionEnter(Collision collision) {
+        public void OnCollisionEnter(Collision collision) {
+
+            GameObject TheArcheryGameController = GameObject.Find("TheArhceryGameController");
+            ArcheryController TheArcheryGameControllerScript = TheArcheryGameController.GetComponent<ArcheryController>();
+
+            if(TheArcheryGameControllerScript.gameTimer > 0)
+            {
+                if (collision.collider.name == "breakable")
+                {
+                    //increase score
+                    TheArcheryGameControllerScript.score += 1;
+               
+                }
+            }
+            
 
             // Ignore parent collisions
             if (transform.parent != null && collision.transform == transform.parent) {
