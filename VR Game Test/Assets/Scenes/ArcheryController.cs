@@ -16,10 +16,13 @@ public class ArcheryController : MonoBehaviour
         timerText.text = "Press Start To Play";
     }
 
-    public void StartButtonPressed()
+    public void ArcheryStartButtonPressed()
     {
         if (gameTimer <= 0)
         {
+            ////put all balls from skiballs into ball array
+            //balls = SkiBalls.GetComponentsInChildren<SkiballScript>();
+            //set variables to (re)start game
             score = 0;
             //update text in unity
             scoreText.text = "Score: " + Mathf.Floor(score);

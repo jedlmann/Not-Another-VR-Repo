@@ -57,6 +57,23 @@ namespace BNG {
                 DestroyThis();
             }
         }
+       
+        private void OnCollisionEnter(Collision collision)
+        {
+            if (collision.gameObject.tag == "arrow")
+            {
+                GameObject TheArcheryGameController = GameObject.Find("TheArcheryGameController");
+                ArcheryController TheArcheryGameControllerScript = TheArcheryGameController.GetComponent<ArcheryController>();
+
+                //increase score
+                TheArcheryGameControllerScript.score += 1;
+
+                //update text in unity
+                TheArcheryGameControllerScript.scoreText.text = "Score: " + Mathf.Floor(TheArcheryGameControllerScript.score);
+                
+            }
+
+        } 
 
         public void DestroyThis() {
             Health = 0;

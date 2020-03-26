@@ -9,6 +9,7 @@ TagManager:
   - hole
   - Score
   - breakable
+  - arrow
   layers:
   - Default
   - TransparentFX
