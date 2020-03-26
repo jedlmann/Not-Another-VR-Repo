@@ -78,8 +78,8 @@ namespace BNG {
             if (DestroyOnDeath) {
                 Destroy(this.gameObject, DestroyDelay);
             }
-            else if (Respawn) {
-                StartCoroutine(RespawnRoutine(RespawnTime));
+          else if (Respawn) {
+                StartCoroutine(RespawnRoutine(RespawnTime)); 
             }
 
             if (RemoveBulletHolesOnDeath) {
@@ -92,7 +92,7 @@ namespace BNG {
                 if (decal) {
                     GameObject.Destroy(decal.gameObject);
                 }
-            }
+            } 
         }
 
         IEnumerator RespawnRoutine(float seconds) {
@@ -114,7 +114,7 @@ namespace BNG {
             foreach (var col in DeactivateCollidersOnDeath) {
                 col.enabled = true;
             }
-        }
+        } 
     }
 }
 

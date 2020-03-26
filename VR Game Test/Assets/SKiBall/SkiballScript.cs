@@ -92,7 +92,7 @@ public class SkiballScript: MonoBehaviour
             }
 
             //update text in unity
-            TheSkiGameControllerScript.scoreText.text = "Score: " + Mathf.Floor(TheSkiGameControllerScript.score);
+            TheSkiGameControllerScript.scoreText.text = "Score: " + Mathf.Floor(TheSkiGameControllerScript.score); //ArcheryController.scoreText.text = "Score: " + Mathf.Floor(ArcheryControllerScript.score);
         }
 
         if (TheSkiGameControllerScript.gameTimer <= 0)

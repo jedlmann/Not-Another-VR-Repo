@@ -14,4 +14,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Archery.unity
     guid: b0b1132f6797b7541af76d3870b93789
+  - enabled: 0
+    path: Assets/Scenes/Backups/SkiBallOld.unity
+    guid: a5cb4a76baff1ee40b4321f1ce556247
+  - enabled: 0
+    path: Assets/Scenes/Backups/savemywork.unity
+    guid: 56431bcb182dcb14da450c1c2058bac8
   m_configObjects: {}
