@@ -10,6 +10,8 @@ TagManager:
   - Score
   - breakable
   - arrow
+  - Pin
+  - Ball
   layers:
   - Default
   - TransparentFX
