@@ -12,6 +12,7 @@ TagManager:
   - arrow
   - Pin
   - Ball
+  - Wall
   layers:
   - Default
   - TransparentFX
