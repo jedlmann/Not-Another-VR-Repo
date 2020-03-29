@@ -9,13 +9,17 @@ public class ArcheryController : MonoBehaviour
     public int score;
     public float gameTimer;
     bool TimerTrue;
-    public GameObject TargetSpawn;
-   
+    GameObject targetSpawn;
+
+    void Awake()
+    {
+        targetSpawn = GameObject.Find("TargetSpawn");
+    }
     void Start()
     {
         gameTimer = 0f;
         timerText.text = "Press Start To Play";
-        TargetSpawn.GetComponent<TargetSpawner>().enabled = false;
+        targetSpawn.SetActive(false);
     }
 
     public void ArcheryStartButtonPressed()
@@ -29,7 +33,7 @@ public class ArcheryController : MonoBehaviour
             gameTimer = 45f;
             timerText.text = "Score: " + Mathf.Floor(score);
             TimerTrue = true;
-            TargetSpawn.GetComponent<TargetSpawner>().enabled = true;
+            targetSpawn.SetActive(true);
 
         }
     }
@@ -56,7 +60,7 @@ public class ArcheryController : MonoBehaviour
         {
             timerText.text = "GAME OVER";
             TimerTrue = false;
-            TargetSpawn.GetComponent<TargetSpawner>().enabled = false;
+            targetSpawn.SetActive(true);
 
         }
     }
