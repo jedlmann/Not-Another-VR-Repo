@@ -9,11 +9,13 @@ public class ArcheryController : MonoBehaviour
     public int score;
     public float gameTimer;
     bool TimerTrue;
+    public GameObject TargetSpawn;
    
     void Start()
     {
         gameTimer = 0f;
         timerText.text = "Press Start To Play";
+        TargetSpawn.GetComponent<TargetSpawner>().enabled = false;
     }
 
     public void ArcheryStartButtonPressed()
@@ -27,6 +29,8 @@ public class ArcheryController : MonoBehaviour
             gameTimer = 45f;
             timerText.text = "Score: " + Mathf.Floor(score);
             TimerTrue = true;
+            TargetSpawn.GetComponent<TargetSpawner>().enabled = true;
+
         }
     }
     // Update is called once per frame
@@ -52,6 +56,7 @@ public class ArcheryController : MonoBehaviour
         {
             timerText.text = "GAME OVER";
             TimerTrue = false;
+            TargetSpawn.GetComponent<TargetSpawner>().enabled = false;
 
         }
     }

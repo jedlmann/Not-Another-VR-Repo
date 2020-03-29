@@ -11,6 +11,7 @@ public class BallScript : MonoBehaviour
     public float BallReturnZ;
 
     Rigidbody ballBody;
+    AudioSource strike;
 
     private void Awake()
     {
@@ -35,10 +36,14 @@ public class BallScript : MonoBehaviour
             transform.localPosition = new Vector3(BallReturnX, BallReturnY, BallReturnZ);
             ballBody.velocity = new Vector3(0.0f, 0, 0);
 
-
+            if (collision.gameObject.tag == "Pin")
+            {
+                strike.Play();
+            }
 
         }
     }
+
 
 
 }
