@@ -8,20 +8,12 @@ public class ArcheryController : MonoBehaviour
     public TextMesh scoreText;
     public int score;
     public float gameTimer;
-    public bool TimerTrue;
-    GameObject targetSpawn;
-    AudioSource Horn;
-    
-
-    void Awake()
-    {
-        targetSpawn = GameObject.Find("TargetSpawn");
-    }
+    bool TimerTrue;
+   
     void Start()
     {
         gameTimer = 0f;
         timerText.text = "Press Start To Play";
-        targetSpawn.SetActive(false);
     }
 
     public void ArcheryStartButtonPressed()
@@ -35,8 +27,6 @@ public class ArcheryController : MonoBehaviour
             gameTimer = 45f;
             timerText.text = "Score: " + Mathf.Floor(score);
             TimerTrue = true;
-            targetSpawn.SetActive(true);
-
         }
     }
     // Update is called once per frame
@@ -48,7 +38,7 @@ public class ArcheryController : MonoBehaviour
             gameTimer -= Time.deltaTime;
         }
 
-        
+
         //check game timer is greater than 0 
         if (gameTimer > 0f)
         {
@@ -60,9 +50,8 @@ public class ArcheryController : MonoBehaviour
         // game timer less than 0 seconds
         else if (gameTimer < 0)
         {
-            timerText.text = "   GAME OVER";
+            timerText.text = "GAME OVER";
             TimerTrue = false;
-            Horn.Play();
 
         }
     }
