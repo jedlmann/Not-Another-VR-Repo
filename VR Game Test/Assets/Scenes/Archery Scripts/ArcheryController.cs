@@ -8,8 +8,10 @@ public class ArcheryController : MonoBehaviour
     public TextMesh scoreText;
     public int score;
     public float gameTimer;
-    bool TimerTrue;
+    public bool TimerTrue;
     GameObject targetSpawn;
+    AudioSource Horn;
+    
 
     void Awake()
     {
@@ -46,7 +48,7 @@ public class ArcheryController : MonoBehaviour
             gameTimer -= Time.deltaTime;
         }
 
-
+        
         //check game timer is greater than 0 
         if (gameTimer > 0f)
         {
@@ -58,9 +60,9 @@ public class ArcheryController : MonoBehaviour
         // game timer less than 0 seconds
         else if (gameTimer < 0)
         {
-            timerText.text = "GAME OVER";
+            timerText.text = "   GAME OVER";
             TimerTrue = false;
-            targetSpawn.SetActive(true);
+            Horn.Play();
 
         }
     }

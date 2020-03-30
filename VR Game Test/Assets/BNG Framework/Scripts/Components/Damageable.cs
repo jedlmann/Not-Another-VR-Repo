@@ -53,12 +53,15 @@ namespace BNG {
                 GameObject TheArcheryGameController = GameObject.Find("TheArcheryGameController");
                 ArcheryController TheArcheryGameControllerScript = TheArcheryGameController.GetComponent<ArcheryController>();
 
-                //increase score
-                TheArcheryGameControllerScript.score += 1;
+                
+                if (TheArcheryGameControllerScript.TimerTrue == true)
+                {
+                    //increase score
+                    TheArcheryGameControllerScript.score += 1;
 
-                //update text in unity
-                TheArcheryGameControllerScript.scoreText.text = "Score: " + Mathf.Floor(TheArcheryGameControllerScript.score);
-
+                    //update text in unity
+                    TheArcheryGameControllerScript.scoreText.text = "Score: " + Mathf.Floor(TheArcheryGameControllerScript.score);
+                }
             }
         }
 
