@@ -2305,16 +2305,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pinsPrefab:
-  - {fileID: 2520704949461150045, guid: 5ca3b5f699d10df4ea03fe99c549640b, type: 3}
-  - {fileID: 3065274322985099433, guid: 58b96ce2261b2d44ea14bb2b3b1f0717, type: 3}
-  - {fileID: 6779687998415999987, guid: 838d7b97c55f15e43a2e97cc9ae4d695, type: 3}
-  - {fileID: 6843533669784238040, guid: 622e14f22daadf8439612fda6aa6c6fb, type: 3}
-  - {fileID: 8492561086709539450, guid: a190df80e3e5ba5468b7ba18673cadcf, type: 3}
-  - {fileID: 8182492235281351009, guid: 6f81db4df0396664588df61297c6f07d, type: 3}
-  - {fileID: 1898394890796714843, guid: 2e3614594973cf44ca4f40bb156e1c42, type: 3}
-  - {fileID: 3609834574263583273, guid: 4e4a0b565bcd57245942261f43388055, type: 3}
-  - {fileID: 5765994654130497369, guid: d00cf7b80774d9947a50efa214114ce0, type: 3}
-  - {fileID: 8546005657100183563, guid: 7b88fe94cedf3fa4a865bea543abf261, type: 3}
+  - {fileID: 416419238861415249, guid: ef1ed734bc6e11643932596cd27b4681, type: 3}
+  - {fileID: 1647909206460593070, guid: ec5bde805e97dbc41a80a2a397fb808c, type: 3}
+  - {fileID: 2561175567735838383, guid: 5ff24f1e70bd2a946b3d2d676189747e, type: 3}
+  - {fileID: 1328446732886460760, guid: f2af456dd9936914bb678ba7ad6f2d7b, type: 3}
+  - {fileID: 8487476265831515322, guid: f20f6e7b0afa83645a3380101f239f62, type: 3}
+  - {fileID: 3199633221729845835, guid: b8d1ca3f181f9404fbb8ec06d057bfb8, type: 3}
+  - {fileID: 8413385041376786518, guid: 199f3760c6fd0184c90ae5f31054ae03, type: 3}
+  - {fileID: 691618550036459968, guid: 1a32472b1e0740341a0d569df5bbce7a, type: 3}
+  - {fileID: 2156228015299399264, guid: 6bcf13d7cf195e444b01c6ee51f1df05, type: 3}
+  - {fileID: 6554509284809372443, guid: df9ddea539e5f8a498bab3c5a1714dcd, type: 3}
 --- !u!1001 &660335578
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5027,6 +5027,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Audio Source
+      objectReference: {fileID: 0}
+    - target: {fileID: 9032876602156107321, guid: 6000ba933a6638f4280b496a8791cb71,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9032876602156107322, guid: 6000ba933a6638f4280b496a8791cb71,
         type: 3}

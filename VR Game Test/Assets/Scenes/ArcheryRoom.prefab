@@ -790,7 +790,7 @@ BoxCollider:
   m_GameObject: {fileID: 4011948880525979868}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 10.000002, y: 22.098429, z: 10.000002}
   m_Center: {x: -4.493194e-22, y: 11.03266, z: -0.000022724274}
@@ -898,7 +898,7 @@ BoxCollider:
   m_GameObject: {fileID: 4011948880525979871}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 10.000002, y: 21.04787, z: 10}
   m_Center: {x: -2.53788e-16, y: 10.520987, z: -5.0000057}
@@ -1600,7 +1600,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6465841311089593200}
   m_Layer: 0
-  m_Name: Room
+  m_Name: ArcheryRoom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
