@@ -6,15 +6,18 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/_MainMenu.unity
+    guid: d521d3b92576ac24ba0786006b6136d3
+  - enabled: 1
     path: Assets/Scenes/Skeeball.unity
     guid: ca8d2eff0f5d2724398a067e00e69eb9
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Bowling.unity
     guid: 14733c4ce73e99a42a0a076912700007
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Archery.unity
     guid: b0b1132f6797b7541af76d3870b93789
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/WhackMole.unity
     guid: 77564e853989f2044a0dc78470031b02
   m_configObjects: {}
