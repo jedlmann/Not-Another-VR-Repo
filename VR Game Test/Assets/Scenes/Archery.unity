@@ -794,7 +794,7 @@ PrefabInstance:
     - target: {fileID: 2855280173786875994, guid: 5473e17f2443cd74c824a7b89f0585f1,
         type: 3}
       propertyPath: DefaultHandsModel
-      value: 3
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8202325032701421788, guid: 5473e17f2443cd74c824a7b89f0585f1,
         type: 3}
@@ -1386,7 +1386,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 0.050980393, g: 0.40784314, b: 0.9647059, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -1551,6 +1551,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Audio Source
+      objectReference: {fileID: 0}
+    - target: {fileID: 9032876602156107321, guid: 6000ba933a6638f4280b496a8791cb71,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9032876602156107322, guid: 6000ba933a6638f4280b496a8791cb71,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9032876602156107323, guid: 6000ba933a6638f4280b496a8791cb71,
         type: 3}
@@ -1734,13 +1744,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1243610474}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ff09aa8fe3c96fb42821756deaf96ab9, type: 3}
+  m_Script: {fileID: 11500000, guid: 0efd56c2c8f564ba3914ca4f2b24116e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   timerText: {fileID: 145471035}
   scoreText: {fileID: 145471034}
   score: 0
   gameTimer: 45
+  TimerTrue: 0
 --- !u!1001 &1245607839
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2441,6 +2452,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4011948880525979865, guid: c8ded4595b41378438e9d042239e3c03,
+        type: 3}
+      propertyPath: m_Size.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4011948880525979865, guid: c8ded4595b41378438e9d042239e3c03,
+        type: 3}
+      propertyPath: m_Center.x
+      value: 8.4248136e-24
+      objectReference: {fileID: 0}
+    - target: {fileID: 4011948880525979865, guid: c8ded4595b41378438e9d042239e3c03,
+        type: 3}
+      propertyPath: m_Center.y
+      value: 10.520986
+      objectReference: {fileID: 0}
+    - target: {fileID: 4011948880525979865, guid: c8ded4595b41378438e9d042239e3c03,
+        type: 3}
+      propertyPath: m_Center.z
+      value: 0.00000055879366
+      objectReference: {fileID: 0}
     - target: {fileID: 6099647084054051453, guid: c8ded4595b41378438e9d042239e3c03,
         type: 3}
       propertyPath: m_Name
