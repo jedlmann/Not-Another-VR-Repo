@@ -794,7 +794,7 @@ PrefabInstance:
     - target: {fileID: 2855280173786875994, guid: 5473e17f2443cd74c824a7b89f0585f1,
         type: 3}
       propertyPath: DefaultHandsModel
-      value: 3
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8202325032701421788, guid: 5473e17f2443cd74c824a7b89f0585f1,
         type: 3}
