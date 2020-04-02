@@ -20,6 +20,8 @@ public class PinScript : MonoBehaviour
             //update text in unity
             TheBowlingGameControllerScript.scoreText.text = "Score: " + Mathf.Floor(TheBowlingGameControllerScript.score);
 
+           
+
         }
     }
 }

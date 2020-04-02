@@ -35,6 +35,11 @@ public class BowlingController : MonoBehaviour
         }
     }
 
+    public void PinButtonPressed()
+    {
+        SpawnAll();
+    }
+
     void SpawnAll()
     {
         for (int i = 0; i < 10; i++)
